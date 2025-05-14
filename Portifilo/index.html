@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushmitha R | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold animate-pulse">Sushmitha R</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#resume" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Resume</a></li>
+        <li>
+          <button id="theme-toggle" class="ml-4 text-xl">
+            <i id="theme-icon" class="ph ph-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-purple-100 dark:from-gray-800 dark:to-gray-700 pt-20" data-aos="fade-up">
+    <div class="text-center animate-fade-in">
+      <h2 class="text-5xl font-bold mb-4">Hi, I'm Sushmitha 👋</h2>
+      <p class="text-xl mb-6">Web Developer | UI Designer</p>
+      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 dark:hover:bg-blue-500 transition transform hover:scale-105">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 bg-white dark:bg-gray-900" data-aos="fade-right">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Me</h3>
+      <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        I'm a web developer who blends creative design with powerful coding. I love turning ideas into beautiful, functional websites. When I'm not coding, I'm probably baking minimalist cakes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Featured Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transform hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+          <p class="mb-2">HTML, Tailwind CSS, JS. Light/Dark mode toggle with clean UI.</p>
+          <a href="#" class="text-blue-600 dark:text-blue-400">GitHub</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transform hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Smart City Digital Twin</h4>
+          <p class="mb-2">HTML, CSS, JavaScript. Real-time traffic and energy data dashboard with refresh feature.</p>
+          <a href="#" class="text-blue-600 dark:text-blue-400">GitHub</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transform hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">School Admin Pages</h4>
+          <p class="mb-2">Next.js. Timetable and Attendance management system with intuitive interface.</p>
+          <a href="#" class="text-blue-600 dark:text-blue-400">GitHub</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transform hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Seafood Community Website</h4>
+          <p class="mb-2">WordPress. Enhanced user engagement with SEO and UX optimization.</p>
+          <a href="#" class="text-blue-600 dark:text-blue-400">GitHub</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transform hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Real Estate Plot Booking</h4>
+          <p class="mb-2">Interactive project webpage with booking and plot availability features.</p>
+          <a href="#" class="text-blue-600 dark:text-blue-400">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white dark:bg-gray-900" data-aos="fade-left">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Skills & Tools</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+        <div class="hover:bg-blue-50 dark:hover:bg-gray-800 p-4 rounded transition">
+          <h4 class="font-semibold">Languages</h4>
+          <p>JavaScript, HTML, CSS, Python, SQL</p>
+        </div>
+        <div class="hover:bg-blue-50 dark:hover:bg-gray-800 p-4 rounded transition">
+          <h4 class="font-semibold">Frameworks & Tools</h4>
+          <p>Tailwind CSS, React, Git, Figma, Next.js, WordPress, Canva</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-20 bg-gray-100 dark:bg-gray-800 text-center" data-aos="zoom-in">
+    <h3 class="text-3xl font-bold mb-4">Resume</h3>
+    <p class="mb-6">Download my up-to-date resume below:</p>
+    <a href="resume.pdf" download class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transform hover:scale-105 transition">Download Resume</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center py-6 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+    <div class="space-x-4 mb-2">
+      <a href="https://github.com/sushmitha100903" target="_blank" class="inline-flex items-center space-x-1 hover:text-blue-600">
+        <i class="ph ph-github-logo text-xl"></i><span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/sushmithar-331439237" target="_blank" class="inline-flex items-center space-x-1 hover:text-blue-600">
+        <i class="ph ph-linkedin-logo text-xl"></i><span>LinkedIn</span>
+      </a>
+    </div>
+    © 2025 Sushmitha R. All rights reserved.
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const icon = document.getElementById("theme-icon");
+    const html = document.documentElement;
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        html.classList.add("dark");
+        icon.className = "ph ph-sun";
+        localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        icon.className = "ph ph-moon";
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    setTheme(savedTheme === "dark" ? "dark" : "light");
+
+    toggleBtn.addEventListener("click", () => {
+      const isDark = html.classList.contains("dark");
+      setTheme(isDark ? "light" : "dark");
+    });
+
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
